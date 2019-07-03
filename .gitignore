@@ -1,0 +1,6 @@
+# Ignore some files
+
+./idea
+
+# Do not commit venv, use a requirements.txt file
+/venv
