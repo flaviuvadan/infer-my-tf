@@ -23,7 +23,8 @@ class Model:
 
     def train(self, x, y):
         """
-        Performs training with the given x, y training pairs (x, y should be zippable)
+        Performs training with the given x, y training pairs (x, y should be zippable, otherwise Python3 will omit
+        unpaired values)
         :param x: [training objects]
         :param y: [training labels of objects in x]
         """
@@ -31,7 +32,7 @@ class Model:
 
     def test(self, x, y):
         """
-        Reports testing of the model (x, y should be zippable)
+        Reports testing of the model (x, y should be zippable, otherwise Python3 will omit unpaired values)
         :param x: [testing objects]
         :param y: [testing labels of objects in x]
         :return: loss, accuracy
